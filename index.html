@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <title>Card ID</title>
+</head>
+
+<body>
+    <div class="navigation-bar">
+        <div class="logo">MY CARDS</div>
+    </div>
+    <div class="container">
+        <div class="form-container">
+            <form name="my-form">
+                <h2>Create your character</h2>
+                <div class="form-input-data">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name-input" required="required" placeholder="Character name">
+                </div>
+                <div class="form-input-data">
+                    <label for="level">Level:</label>
+                    <input type="text" name="level" id="level-input" required="required" placeholder="Character level">
+                </div>
+                <div class="form-input-data">
+                    <label for="class">Class:</label>
+                    <select id="class-input" name="character-class">
+                        <option value="default">-</option>
+                        <option value="barbarian">Barbarian</option>
+                        <option value="bard">Bard</option>
+                        <option value="cleric">Cleric</option>
+                        <option value="druid">Druid</option>
+                        <option value="mage">Mage</option>
+                        <option value="monk">Monk</option>
+                        <option value="paladin">Paladin</option>
+                        <option value="ranger">Ranger</option>
+                        <option value="rogue">Rogue</option>
+                        <option value="sorcerer">Sorcerer</option>
+                        <option value="warrior">Warrior</option>
+                        <option value="wizard">Wizard</option>
+                    </select>
+                </div>
+            </form>
+            <button id="input-button" type="button" onclick="setCharacterCard()">Generate Attributes</button>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <div id="life">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>15</span>
+                </div>
+                <!-- <img src="./img/goblin.png" alt="photo"> -->
+            </div>
+            <div class="card-info">
+                <h2 id="name"></h2>
+                <h2 id="level"></h2>
+                <h2 id="class"></h2>
+            </div>
+            <div class="card-class">              
+            </div>
+            <div class="card-content">
+                <div class="skill-container">
+                    <div class="skill-item">
+                        <p class="ability">Strong</p>
+                        <div class="skill">
+                            <div class="progress-bar STR"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <p>Dextery</p>
+                        <div class="skill">
+                            <div class="progress-bar DEX"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <p>Constitution</p>
+                        <div class="skill">
+                            <div class="progress-bar CON"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <p>Wisdom</p>
+                        <div class="skill">
+                            <div class="progress-bar WIS"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <p>Intelligence</p>
+                        <div class="skill">
+                            <div class="progress-bar INT"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <p>Charism</p>
+                        <div class="skill">
+                            <div class="progress-bar CHA"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="social-medias">
+                    <!-- <a href="#"><i class="fa-regular fa-face-meh"></i></a> -->
+                    <a href="#"><i class="fa-brands fa-d-and-d"></i></a>
+                    <a href="#"><i class="fa-solid fa-dice-d20"></i></a>
+                </div>
+                <button class="button-contract">contract</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="logo">MY CARDS</div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
